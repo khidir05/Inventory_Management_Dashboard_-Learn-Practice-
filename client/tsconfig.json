@@ -1,0 +1,35 @@
+{
+  "compilerOptions": {
+    "target": "ES2020",                          // More modern JS output
+    "lib": ["DOM", "DOM.Iterable", "ESNext"],
+    "module": "ESNext",                          // Supports modern module resolution
+    "moduleResolution": "Bundler",               // Ideal for Next.js 13+ and modern bundlers
+    "allowJs": true,                             // Allow JS in the project
+    "checkJs": false,                            // Do not type-check JS files
+    "strict": true,                              // Enables all strict type-checking options
+    "noEmit": true,                              // Don't output files, for type-checking only
+    "esModuleInterop": true,                     // Ensures compatibility with CommonJS modules
+    "forceConsistentCasingInFileNames": true,
+    "resolveJsonModule": true,                   // Allow importing JSON files
+    "isolatedModules": true,                     // Needed for Next.js and separate transpilation
+    "incremental": true,                         // Speed up type checking by reusing info
+    "jsx": "preserve",                           // Leave JSX as-is for Next.js
+    "skipLibCheck": true,                        // Skip checking types of node_modules
+    "baseUrl": ".",                              // Required for "paths"
+    "paths": {
+      "@/*": ["src/*"]                           // Path alias for cleaner imports
+    },
+    "plugins": [
+      {
+        "name": "next"
+      }
+    ]
+  },
+  "include": [
+    "next-env.d.ts",
+    "**/*.ts",
+    "**/*.tsx",
+    ".next/types/**/*.ts"
+  ],
+  "exclude": ["node_modules"]
+}

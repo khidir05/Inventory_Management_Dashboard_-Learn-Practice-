@@ -1,0 +1,12 @@
+Extensions For Visual Studio
+- ES7 + React/Redux/React-Native snippets
+- Prettier - Code Formatter
+- Prettier ESLint
+
+Chrome Extensions
+- Redux DevTools (Optional)
+- Pesticide for Chrome (Optional)
+
+>root: npx create-next-app@latest
+>root/client: npm i @mui/x-data-grid @mui/material @emotion/react @emotion/styled lucide-react numeral recharts uuid axios  
+
