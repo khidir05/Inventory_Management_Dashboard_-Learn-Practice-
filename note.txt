@@ -9,4 +9,5 @@ Chrome Extensions
 
 >root: npx create-next-app@latest
 >root/client: npm i @mui/x-data-grid @mui/material @emotion/react @emotion/styled lucide-react numeral recharts uuid axios  
+>root/client: npm i react-redux @reduxjs/toolkit dotenv
 
